@@ -130,7 +130,7 @@ object LiquidBounce : Listenable {
             ConfigSystem
             globalEnemyConfigurable
 
-            ChunkScanner
+//            ChunkScanner
             WorldChangeNotifier
 
             // Features

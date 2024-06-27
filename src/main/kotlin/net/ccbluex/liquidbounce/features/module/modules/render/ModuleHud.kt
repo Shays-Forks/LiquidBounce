@@ -93,7 +93,7 @@ object ModuleHud : Module("HUD", Category.RENDER, state = true, hide = true) {
         refresh()
 
         // Minimap
-        ChunkScanner.subscribe(ChunkRenderer.MinimapChunkUpdateSubscriber)
+//        ChunkScanner.subscribe(ChunkRenderer.MinimapChunkUpdateSubscriber)
     }
 
     override fun disable() {
@@ -102,7 +102,7 @@ object ModuleHud : Module("HUD", Category.RENDER, state = true, hide = true) {
         browserTab = null
 
         // Minimap
-        ChunkScanner.unsubscribe(ChunkRenderer.MinimapChunkUpdateSubscriber)
+//        ChunkScanner.unsubscribe(ChunkRenderer.MinimapChunkUpdateSubscriber)
         ChunkRenderer.unloadEverything()
     }
 
