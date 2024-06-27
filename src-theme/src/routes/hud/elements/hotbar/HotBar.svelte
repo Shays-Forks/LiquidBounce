@@ -133,14 +133,12 @@
                     />
                 </div>
             {/if}
-            {#if playerData.experienceLevel > 0}
-                <Status
-                        max={100} value={playerData.experienceProgress * 100}
-                        color="#88C657"
-                        alignRight={false}
-                        label={playerData.experienceLevel.toString()}
-                />
-            {/if}
+            <Status
+                    max={100} value={playerData.experienceProgress * 100}
+                    color="#88C657"
+                    alignRight={false}
+                    label={playerData.experienceLevel.toString()}
+            />
 
         </div>
 
