@@ -130,7 +130,7 @@ object LiquidBounce : Listenable {
             ConfigSystem
             combatTargetsConfigurable
 
-            ChunkScanner
+//            ChunkScanner
             WorldChangeNotifier
             MouseStateTracker
 
