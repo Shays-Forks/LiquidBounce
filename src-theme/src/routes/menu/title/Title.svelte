@@ -19,21 +19,6 @@
     let regularButtonsShown = true;
     let clientButtonsShown = false;
 
-    onMount(() => {
-        setTimeout(async () => {
-            const update = await getClientUpdate();
-
-            if (update.updateAvailable) {
-                notification.set({
-                    title: `LiquidBounce ${update.newestVersion?.clientVersion} has been released!`,
-                    message: `Download it from liquidbounce.net!`,
-                    error: false,
-                    delay: 99999999
-                });
-            }
-        }, 2000);
-    });
-
     function toggleButtons() {
         if (clientButtonsShown) {
             clientButtonsShown = false;
