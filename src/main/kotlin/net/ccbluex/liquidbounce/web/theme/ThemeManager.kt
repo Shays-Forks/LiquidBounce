@@ -124,10 +124,10 @@ object ThemeManager : Configurable("theme") {
     }
 
     fun initialiseBackground() {
-        // Load background image of active theme and fallback to default theme if not available
-        if (!activeTheme.loadBackgroundImage()) {
-            defaultTheme.loadBackgroundImage()
-        }
+//        // Load background image of active theme and fallback to default theme if not available
+//        if (!activeTheme.loadBackgroundImage()) {
+//            defaultTheme.loadBackgroundImage()
+//        }
 
         // Compile shader of active theme and fallback to default theme if not available
         if (shaderEnabled && !activeTheme.compileShader()) {
