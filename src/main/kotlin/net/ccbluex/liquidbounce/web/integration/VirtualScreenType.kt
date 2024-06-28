@@ -103,11 +103,6 @@ enum class VirtualScreenType(
         recognizer = { it is GameMenuScreen }
     ),
 
-    INVENTORY(
-        "inventory",
-        recognizer = { it is InventoryScreen || it is CreativeInventoryScreen }
-    ),
-
     CONTAINER(
         "container",
         recognizer = { it is GenericContainerScreen }
