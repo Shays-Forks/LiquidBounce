@@ -108,10 +108,6 @@ enum class VirtualScreenType(
         recognizer = { it is GenericContainerScreen }
     ),
 
-    DISCONNECTED("disconnected",
-        recognizer = { it is DisconnectedScreen }
-    ),
-
     VIAFABRICPLUS_PROTOCOL_SELECTION("viafabricplus_protocol_selection",
         recognizer = { it::class.java.name == "de.florianmichael.viafabricplus.screen.base.ProtocolSelectionScreen" },
         open = { openVfpProtocolSelection() }
