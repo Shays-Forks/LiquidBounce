@@ -13,7 +13,6 @@
     import Singleplayer from "./routes/menu/singleplayer/Singleplayer.svelte";
     import ProxyManager from "./routes/menu/proxymanager/ProxyManager.svelte";
     import None from "./routes/none/None.svelte";
-    import Disconnected from "./routes/menu/disconnected/Disconnected.svelte";
 
     const routes = {
         "/clickgui": ClickGui,
