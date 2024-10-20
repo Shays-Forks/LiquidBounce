@@ -256,21 +256,21 @@ public abstract class MixinGameRenderer {
         ((LightmapTextureManagerAddition) lightmapTextureManager).liquid_bounce$restoreLightMap();
     }
   
-    @ModifyExpressionValue(method = "getFov", at = @At(value = "INVOKE", target = "Ljava/lang/Integer;intValue()I", remap = false))
-    private int hookGetFov(int original) {
-        int result;
-
-        if (ModuleZoom.INSTANCE.getEnabled()) {
-            return ModuleZoom.INSTANCE.getFov(true, 0);
-        } else {
-            result = ModuleZoom.INSTANCE.getFov(false, original);
-        }
-
-        if (ModuleNoFov.INSTANCE.getEnabled() && result == original) {
-            return ModuleNoFov.INSTANCE.getFov(result);
-        }
-
-        return result;
-    }
+//    @ModifyExpressionValue(method = "getFov", at = @At(value = "INVOKE", target = "Ljava/lang/Integer;intValue()I", remap = false))
+//    private int hookGetFov(int original) {
+//        int result;
+//
+//        if (ModuleZoom.INSTANCE.getEnabled()) {
+//            return ModuleZoom.INSTANCE.getFov(true, 0);
+//        } else {
+//            result = ModuleZoom.INSTANCE.getFov(false, original);
+//        }
+//
+//        if (ModuleNoFov.INSTANCE.getEnabled() && result == original) {
+//            return ModuleNoFov.INSTANCE.getFov(result);
+//        }
+//
+//        return result;
+//    }
 
 }
