@@ -13,7 +13,6 @@
     import Singleplayer from "./routes/menu/singleplayer/Singleplayer.svelte";
     import ProxyManager from "./routes/menu/proxymanager/ProxyManager.svelte";
     import None from "./routes/none/None.svelte";
-    import Disconnected from "./routes/menu/disconnected/Disconnected.svelte";
     import Browser from "./routes/browser/Browser.svelte";
 
     const routes = {
@@ -26,7 +25,6 @@
         "/singleplayer": Singleplayer,
         "/proxymanager": ProxyManager,
         "/none": None,
-        "/disconnected": Disconnected,
         "/browser": Browser
     };
 
